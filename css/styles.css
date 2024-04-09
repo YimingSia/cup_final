@@ -1,0 +1,164 @@
+a{
+    text-decoration: none;
+    color: #46381A;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+}
+
+nav ul li{
+	padding:10px;
+	width:25%;
+	display: inline-block;
+	width: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #B3AA98;
+    color: white;
+    
+}
+
+.menu-item-active{
+    font-weight: bold;
+    color: #3B2C0E;
+    text-decoration: underline;
+}
+
+body{
+    background-color: #F8F7E9;
+    color: #413113;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h2:before{
+    content:"🌟";
+    margin-right:10px;
+}
+
+p{
+    margin-bottom: 10px;
+    color: #3B2C0E;
+    background-color: #D5D4C4;
+    padding:16px 20px 16px 20px;
+}
+
+img{
+    height: auto;
+	width:260px;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 5px;
+	margin-left: 10%;
+}
+
+.head-image{
+    width:500px;
+    height:auto;
+}
+
+video{
+    height: auto;
+	width:260px;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 5px;
+	margin-left: 10%
+}
+
+.bullet_points:before{
+    content:"❤️";
+    margin-right:10px;
+}
+
+.bullet_point_recipe:before{
+    content:"✏️";
+    margin-right:10px;
+}
+
+
+
+.grid-container{
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-container2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+@media only screen and (max-width: 440px) {
+    .hidden-link {
+      display: none;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-container2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    img{
+        width:100%;
+    }
+    
+    video{
+        width:100%;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .gif {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-container2 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    img{
+        width:100%;
+    }
+    
+    video{
+        width:100%;
+    }
+
+}
